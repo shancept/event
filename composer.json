@@ -1,0 +1,43 @@
+{
+    "name": "shancept/event",
+    "description": "Events",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Nikita Shancept",
+            "email": "shancept@gmail.com"
+        },
+        {
+            "name": "purgenyo",
+            "email": "famiconbit@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "dg/bypass-finals": "^1.3",
+        "vimeo/psalm": "^4.29",
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "psr/container": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shancept\\Event\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shancept\\Event\\Test\\": "./tests",
+            "Shancept\\Event\\Example\\": "./example"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "php-cs-fixer": "php-cs-fixer --config=.php-cs-fixer.php --allow-risky=yes",
+        "cs-fix": "@composer php-cs-fixer fix",
+        "psalm": "psalm --config=psalm.xml"
+    }
+}
