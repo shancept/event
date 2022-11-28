@@ -3,6 +3,7 @@
     "description": "Events",
     "type": "library",
     "license": "Apache-2.0",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Nikita Shancept",
@@ -39,5 +40,6 @@
         "php-cs-fixer": "php-cs-fixer --config=.php-cs-fixer.php --allow-risky=yes",
         "cs-fix": "@composer php-cs-fixer fix",
         "psalm": "psalm --config=psalm.xml"
-    }
+    },
+    "minimum-stability": "dev"
 }
