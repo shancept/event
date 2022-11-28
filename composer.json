@@ -39,5 +39,6 @@
         "php-cs-fixer": "php-cs-fixer --config=.php-cs-fixer.php --allow-risky=yes",
         "cs-fix": "@composer php-cs-fixer fix",
         "psalm": "psalm --config=psalm.xml"
-    }
+    },
+    "minimum-stability": "stable"
 }
