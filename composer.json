@@ -40,5 +40,5 @@
         "cs-fix": "@composer php-cs-fixer fix",
         "psalm": "psalm --config=psalm.xml"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
